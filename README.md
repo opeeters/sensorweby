@@ -11,8 +11,16 @@ A JavaScript sensor web client with graphs and analytics powered by Shiny. `sens
 The sensorweby package and the required package `sensorweb4R` are not on CRAN yet, so please download and install the package manually. The first option is using the package ``devtools``, which also works well for your own fork or development versions by other contributors.
 
 ```r
+install.packages("openair")
+
 devtools::install_github("52North/sensorweb4R")
 devtools::install_github("52North/sensorweby")
+```
+
+On Fedora/RedHat/CentOS the following libraries will be required:
+
+```shell
+yum install libpng libpng-devel
 ```
 
 Alternatively, you can download the source code and install the package from source. For this to work must have both [git](http://git-scm.com/downloads) and R (see documentation [here](http://cran.r-project.org/bin/windows/base/rw-FAQ.html#Rcmd-is-not-found-in-my-PATH_0021) for Windows) on your path. Then run the following commands:
